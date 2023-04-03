@@ -90,6 +90,46 @@ const scrollActive = () => {
 }
 window.addEventListener('scroll', scrollActive)
 
+/*=============== CONTACT ME SECTIONS ACTIVE LINK ===============*/
+
+// const Contacme = () => {
+
+//     const [name, setName] = useState('')
+//     const [email, setEmail] = useState('')
+//     const [project, setProject] = useState('')
+
+//     const [urlComplete, setUrlComplete] = useState('mailto:valentina.rtpo17@gmail.com')
+
+//     const handledSendMail = () => {
+//         const concatCharacter = ['?', '&'];
+//         let url = 'mailto:valentina.rtpo17@gmail.com'
+//         if (email) {
+//             url += `${concatCharacter[index]}cc=${email}`;
+//             index = 1;
+//         }
+//         if (name) {
+//             url += `${concatCharacter[index]}body=${name.replace(' ', '%20')}`;
+//         }
+//         if (project) {
+//             url += `${concatCharacter[index]}body=${project.replace(' ', '%20')}`
+//         }
+
+//         setUrlComplete(url)
+//     }
+
+//     const handledEmail = (event) => {
+//         const { target } = event
+//         const { value, name } = target
+//         if (name == 'name') setName(value)
+//         if (name == 'email') setEmail(value)
+//         if (name == 'project') setProject(value)
+
+//         handledSendMail()
+//     }
+// }
+
+// export default Contacme
+
 /*=============== LIGHT DARK THEME ===============*/ 
 const themeButton = document.getElementById('theme-button')
 const lightTheme = 'light-theme'
