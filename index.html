@@ -591,7 +591,7 @@
                 <div class="contact__content">
                     <h3 class="contact__title">Write me your project</h3>
 
-                    <form action="mailto:valentina.rtpo17@gmail.com" method="post" enctype="text/plain" class="contact__form">
+                    <form onsubmit="event.preventDefault();" class="contact__form">
                         <div class="contact__form-div">
                             <label for="names" class="contact__form-tag">Names</label>
                             <input type="text" name="names" id="names" placeholder="Insert your name" class="contact__form-input">
@@ -608,7 +608,7 @@
                                 class="contact__form-input"></textarea>
                         </div>
 
-                        <button class="button">Send Message</button>
+                        <button onclick="sendEmail();" class="button">Send Message</button>
 
                     </form>
                 </div>
